@@ -65,14 +65,39 @@ body{
 .HeaderImg{
 
     height: calc(10vh);
-    padding-left: 40px;
+    padding-left: 25px;
     margin-top: 9%;
+    opacity: 0.8;
+    transform: scale(1);
+    transition-property:transform ;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.1s;
+}
+
+.HeaderImg:hover{
+
+
+
+    
+    transform: scale(1.2);
+    opacity: 1;
+
+
+}
+
+.VerticialLine{
+
+
+    border-left: 3px solid lightblue;
+    height: 55%;
+    margin-left: 30px ;
+    margin-top: 5%;
 
 }
 
 .Home{
 
-    border-right: 5px solid lightblue;
     padding-right: 10%;
     height: calc(5vh);
     margin-top:15%;
@@ -80,8 +105,6 @@ body{
 }
 
 .Author{
-
-    border-right: 5px solid lightblue;
     height: calc(5vh);
     margin-top:15%;
     padding-right: 10%;
@@ -215,19 +238,4 @@ a{
 .StoreBlocks:nth-child(7){
 
     background-color: rgb(161, 175, 53);
-}
-
-.StoreBlocks:nth-child(8){
-
-    background-color: rgb(232, 241, 161);
-}
-
-.StoreBlocks:nth-child(9){
-
-    background-color: rgb(44, 49, 7);
-}
-
-.StoreBlocks:nth-child(10){
-
-    background-color: rgb(223, 228, 182);
 }

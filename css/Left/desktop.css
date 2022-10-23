@@ -4,6 +4,7 @@ html{
 
 }
 
+
 *,*:after,*:before{
     box-sizing: inherit;
 }
@@ -12,17 +13,33 @@ html{
     display: none;
 }
 
+@keyframes Fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
-.container{
+body{
 
+   
     
+
+   
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-name: Fadein;
     height: 1080px;
     width:auto;
     max-height:  calc(100vh);
-
     background-color: rgb(28, 28, 28);
     font-family: 'Noto Sans TC', sans-serif;
+    
+   
 }
 
 
@@ -81,8 +98,7 @@ a{
 
 
 .StoreContainer{
-    height: 84%;
-    max-height: 90%;
+    height: calc(83vh);
     width: auto;
     overflow-x: scroll;
     scroll-behavior:smooth;
@@ -118,13 +134,13 @@ a{
 
 .StoreTitle{
 
-    width: 35%;
+    width: calc(70vh);
     height: 100%;
     flex-shrink: 0;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 1%;
-    font-size: 30px;
+    font-size: calc(5vh);
     text-align:center;
 
 
@@ -135,7 +151,7 @@ a{
 .StoreBlocks{
 
     display: flex;
-    width: 35%;
+    width: calc(70vh);
     height: 90%;
     flex-shrink: 0;
     margin-right: 5%;

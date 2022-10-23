@@ -6,7 +6,7 @@ StoreContainer.addEventListener("wheel" , function(event){
     event.preventDefault;
 
     
-    StoreContainer.scrollLeft += event.deltaY*1.8;
+    StoreContainer.scrollLeft += event.deltaY*3;
 
 
 });

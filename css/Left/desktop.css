@@ -17,7 +17,7 @@ html{
 .container{
 
     
-    height: 920px;
+    height: 1080px;
     width:auto;
     max-height:  calc(100vh);
 
@@ -101,7 +101,7 @@ a{
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 1%;
-    font-size: 12px;
+    font-size: 30px;
     text-align:center;
 
 

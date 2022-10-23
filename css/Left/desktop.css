@@ -81,8 +81,7 @@ a{
 
 
 .StoreContainer{
-    height: 84%;
-    max-height: 90%;
+    height: calc(83vh);
     width: auto;
     overflow-x: scroll;
     scroll-behavior:smooth;
@@ -118,13 +117,13 @@ a{
 
 .StoreTitle{
 
-    width: 35%;
+    width: calc(70vh);
     height: 100%;
     flex-shrink: 0;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 1%;
-    font-size: 30px;
+    font-size: calc(5vh);
     text-align:center;
 
 
@@ -135,7 +134,7 @@ a{
 .StoreBlocks{
 
     display: flex;
-    width: 35%;
+    width: calc(70vh);
     height: 90%;
     flex-shrink: 0;
     margin-right: 5%;

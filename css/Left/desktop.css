@@ -4,6 +4,7 @@ html{
 
 }
 
+
 *,*:after,*:before{
     box-sizing: inherit;
 }
@@ -12,17 +13,33 @@ html{
     display: none;
 }
 
+@keyframes Fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
-.container{
+body{
 
+   
     
+
+   
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-name: Fadein;
     height: 1080px;
     width:auto;
     max-height:  calc(100vh);
-
     background-color: rgb(28, 28, 28);
     font-family: 'Noto Sans TC', sans-serif;
+    
+   
 }
 
 

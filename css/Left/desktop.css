@@ -1,0 +1,178 @@
+html{
+
+    box-sizing: border-box;
+
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.container{
+
+    
+    height: 920px;
+    width:auto;
+    max-height:  calc(100vh);
+
+    background-color: rgb(28, 28, 28);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+.Header{
+
+    background-color: aliceblue;
+    display: flex;
+    justify-content:space-between;
+    height: 10%;
+
+}
+
+.HeaderLink{
+
+    display: flex;
+    max-height: 100% ;
+
+}
+
+.HeaderImg{
+
+    height: calc(100vh/10);
+
+
+}
+
+a{
+    line-height: 0px;
+    font-size: 0px;
+
+}
+
+
+
+.StoreContainer{
+    height: 90%;
+    max-height: 90%;
+    width: auto;
+    overflow-x: scroll;
+    scroll-behavior:smooth;
+    margin: 0;
+
+}
+.StoreBar{
+
+    height: 15%;
+
+}
+.StoreTitleBar{
+
+    margin-top: 0%;
+    margin-bottom:1% ;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 100%;
+    padding: 0%;
+    
+    color: white;
+}
+
+
+.StoreBlocksList{
+    height: 85%;
+    display: flex;
+    list-style: none;
+    padding-right: 1%;
+
+}
+
+.StoreTitle{
+
+    width: 35%;
+    height: 100%;
+    flex-shrink: 0;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 12px;
+    text-align:center;
+
+
+}
+
+
+
+.StoreBlocks{
+
+    display: flex;
+    width: 35%;
+    flex-shrink: 0;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+.StoreBlocks img{
+
+    height:calc(100vh/10*6) ;
+
+}
+
+
+.StoreBlocks:nth-child(1){
+
+    background-color: aquamarine;
+}
+
+.StoreBlocks:nth-child(2){
+
+    background-color: rgb(255, 127, 193);
+}
+
+.StoreBlocks:nth-child(3){
+
+    background-color: rgb(161, 175, 53);
+}
+
+.StoreBlocks:nth-child(4){
+
+    background-color: rgb(154, 159, 119);
+}
+
+.StoreBlocks:nth-child(5){
+
+    background-color: rgb(154, 159, 119);
+}
+
+.StoreBlocks:nth-child(6){
+
+    background-color: rgb(90, 53, 175);
+}
+
+
+.StoreBlocks:nth-child(7){
+
+    background-color: rgb(161, 175, 53);
+}
+
+.StoreBlocks:nth-child(8){
+
+    background-color: rgb(232, 241, 161);
+}
+
+.StoreBlocks:nth-child(9){
+
+    background-color: rgb(44, 49, 7);
+}
+
+.StoreBlocks:nth-child(10){
+
+    background-color: rgb(223, 228, 182);
+}

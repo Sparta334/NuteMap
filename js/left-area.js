@@ -22,6 +22,16 @@ if(document.documentElement.clientHeight >= document.documentElement.clientWidth
     
     document.querySelector('.Home').style.height ="3vw";
     document.querySelector('.Author').style.height ="3vw";
-
 }
+
+window.addEventListener('resize' , function(){
+
+    
+        window.location.reload();
+    
+
+} );
+
+
+
 

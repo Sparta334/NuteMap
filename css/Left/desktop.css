@@ -65,14 +65,39 @@ body{
 .HeaderImg{
 
     height: calc(10vh);
-    padding-left: 40px;
+    padding-left: 25px;
     margin-top: 9%;
+    opacity: 0.8;
+    transform: scale(1);
+    transition-property:transform ;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.1s;
+}
+
+.HeaderImg:hover{
+
+
+
+    
+    transform: scale(1.2);
+    opacity: 1;
+
+
+}
+
+.VerticialLine{
+
+
+    border-left: 3px solid lightblue;
+    height: 55%;
+    margin-left: 30px ;
+    margin-top: 5%;
 
 }
 
 .Home{
 
-    border-right: 5px solid lightblue;
     padding-right: 10%;
     height: calc(5vh);
     margin-top:15%;
@@ -80,8 +105,6 @@ body{
 }
 
 .Author{
-
-    border-right: 5px solid lightblue;
     height: calc(5vh);
     margin-top:15%;
     padding-right: 10%;
@@ -92,6 +115,7 @@ body{
 a{
     line-height: 0px;
     font-size: 0px;
+    text-decoration: none;
 
 }
 
@@ -125,10 +149,11 @@ a{
 
 
 .StoreBlocksList{
-    height: 85%;
+    height: 75%;
     padding-right: 1%;
     display: flex;
     list-style: none;
+    padding:0;
 
 }
 
@@ -152,33 +177,108 @@ a{
 
     display: flex;
     width: calc(70vh);
-    height: 90%;
+    height: 100%;
     flex-shrink: 0;
     margin-right: 5%;
     margin-left: 5%;
-    
+    display: flex;
+
+ 
 
 }
 
 .StoreBlocks img{
-    transition-property: width,height;
+    transition-property: width,height transform;
     transition-duration: 1s;
     transition-timing-function: ease;
     transition-delay: 0.1s;
     margin: auto;
     height:80% ;
     width: 80% ;
+    
 }
+
+
+
 
 
 .StoreBlocks img:hover{
 
+   
     width: 100% ;
     height: 100% ;
+    
 }
 
 
+.StoreBlocks img:active{
 
+    transform: rotate(-45deg);
+    border-radius: 100%;
+    width: 80% ;
+    height: 80% ;
+}
+
+
+.InfoBlocksBar{
+
+    height: 5%;
+    width: auto;
+    display: flex;
+    margin-right: 0;
+    margin-top: -1%;
+    
+
+}
+
+.InfoBlocks{
+
+    display: flex;
+    width: calc(70vh);
+    height: 100%;
+    flex-shrink: 1;
+    margin-right: 5%;
+    margin-left: 5%;
+    transform: scale(0.85);
+
+
+    transition-property: transform;
+    transition-duration: 1.3s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+}
+
+.InfoBlocks:hover{
+
+    flex-shrink: 1;
+    margin-right: 5%;
+    margin-left: 5%;
+    transform: scale(1);
+
+}
+
+.InfoBlocks a{
+
+    width: calc(70vh);
+    height: 100%;
+    flex-shrink: 0;
+
+}
+
+.Info{
+
+    width: calc(70vh);
+    font-size: 12px;
+    height: 100%;
+    color: white;
+    line-height: 95%;
+    text-decoration: none;
+    text-align: center;
+    border: 4px ridge rgba(173, 216, 230, 0.644);
+    background-color: black;
+
+   
+}
 
 
 .StoreBlocks:nth-child(1){
@@ -215,19 +315,4 @@ a{
 .StoreBlocks:nth-child(7){
 
     background-color: rgb(161, 175, 53);
-}
-
-.StoreBlocks:nth-child(8){
-
-    background-color: rgb(232, 241, 161);
-}
-
-.StoreBlocks:nth-child(9){
-
-    background-color: rgb(44, 49, 7);
-}
-
-.StoreBlocks:nth-child(10){
-
-    background-color: rgb(223, 228, 182);
 }

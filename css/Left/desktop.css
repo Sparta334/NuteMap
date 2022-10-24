@@ -226,7 +226,7 @@ a{
     width: auto;
     display: flex;
     margin-right: 0;
-    margin-top: -1%;
+    margin-top: 0%;
     
 
 }
@@ -236,7 +236,7 @@ a{
     display: flex;
     width: calc(70vh);
     height: 100%;
-    flex-shrink: 1;
+    flex-shrink: 0;
     margin-right: 5%;
     margin-left: 5%;
     transform: scale(0.85);
@@ -268,13 +268,13 @@ a{
 .Info{
 
     width: calc(70vh);
-    font-size: 12px;
-    height: 100%;
+    font-size: calc(3vh);
+    height: calc(100-2.5vh);
     color: white;
-    line-height: 95%;
+    line-height: 120%;
     text-decoration: none;
     text-align: center;
-    border: 4px ridge rgba(173, 216, 230, 0.644);
+    border: 5px ridge rgba(173, 216, 230, 0.644);
     background-color: black;
 
    

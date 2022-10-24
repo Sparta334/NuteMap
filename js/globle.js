@@ -106,3 +106,26 @@ window.addEventListener('resize' , function(){
 
 reload();
 
+
+// hover
+
+let title = document.getElementsByClassName("StoreBlocksImg");
+
+for(let i = 0 ; i<title.length ;i++ ){
+
+    title[i].addEventListener('mouseover' ,function(){
+
+        let TargetTitle = document.querySelector("#StoreTitleBar :nth-child("+(i+1).toString()+")");
+        TargetTitle.style.opacity = 1;
+    })
+
+}
+for(let i = 0 ; i<title.length ;i++ ){
+
+    title[i].addEventListener('mouseout' ,function(){
+
+        let TargetTitle = document.querySelector("#StoreTitleBar :nth-child("+(i+1).toString()+")");
+        TargetTitle.style.opacity = 0;
+    })
+
+}

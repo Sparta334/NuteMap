@@ -1,3 +1,5 @@
+
+
 html{
 
     box-sizing: border-box;
@@ -134,7 +136,7 @@ a{
     height: 15%;
 
 }
-.StoreTitleBar{
+#StoreTitleBar{
 
     margin-top: 0%;
     margin-bottom:1% ;
@@ -159,7 +161,7 @@ a{
 
 .StoreTitle{
 
-    width: calc(70vh);
+    width: calc(60vh);
     height: 100%;
     flex-shrink: 0;
     margin-right: 5%;
@@ -167,6 +169,12 @@ a{
     margin-top: 1%;
     font-size: calc(5vh);
     text-align:center;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+    
 
 
 }
@@ -176,23 +184,25 @@ a{
 .StoreBlocks{
 
     display: flex;
-    width: calc(70vh);
-    height: 100%;
+    width: calc(60vh);
+    height: calc(60vh);
     flex-shrink: 0;
     margin-right: 5%;
     margin-left: 5%;
     display: flex;
 
- 
+    
 
 }
 
 .StoreBlocks img{
-    transition-property: width,height transform;
+    transition-property: width,height,transform , border-radius;
     transition-duration: 1s;
     transition-timing-function: ease;
     transition-delay: 0.1s;
     margin: auto;
+    transform: rotate(0);
+    border-radius:0;
     height:80% ;
     width: 80% ;
     
@@ -202,13 +212,15 @@ a{
 
 
 
-.StoreBlocks img:hover{
+.StoreBlocks img:hover  {
 
    
     width: 100% ;
     height: 100% ;
     
 }
+
+
 
 
 .StoreBlocks img:active{
@@ -218,6 +230,7 @@ a{
     width: 80% ;
     height: 80% ;
 }
+
 
 
 .InfoBlocksBar{
@@ -234,7 +247,7 @@ a{
 .InfoBlocks{
 
     display: flex;
-    width: calc(70vh);
+    width: calc(60vh);
     height: 100%;
     flex-shrink: 0;
     margin-right: 5%;
@@ -259,7 +272,7 @@ a{
 
 .InfoBlocks a{
 
-    width: calc(70vh);
+    width: calc(60vh);
     height: 100%;
     flex-shrink: 0;
 
@@ -267,7 +280,7 @@ a{
 
 .Info{
 
-    width: calc(70vh);
+    width: calc(60vh);
     font-size: calc(3vh);
     height: calc(100-2.5vh);
     color: white;

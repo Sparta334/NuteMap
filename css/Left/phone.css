@@ -128,6 +128,17 @@ a{
     width: 80% ;
 }
 
+.StoreBlocks div{
+    transition-property: width,height;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+    margin: auto;
+    height:80% ;
+    width: 80% ;
+}
+
+
 
 .StoreBlocks img:hover{
 

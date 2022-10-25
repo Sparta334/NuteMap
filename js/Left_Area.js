@@ -13,6 +13,7 @@ StoreContainer.addEventListener("wheel" , function(event){
 
 
 //禁用滑鼠右鍵
+
 function forbidRightMouse(evt)
 {
     if (evt)
@@ -21,17 +22,18 @@ function forbidRightMouse(evt)
         window.event.returnValue = false;   //IE的事件模型
 }
 
-document.oncontextmenu = forbidRightMouse;//防止遊覽者使用滑鼠右鍵
+
+document.oncontextmenu = forbidRightMouse; //防止遊覽者使用滑鼠右鍵
 
 
 
-function reload(){
-    let container = document.getElementById('Headcontainer');
+function reload(NameID){
+    let container = document.getElementById(NameID);
     let content = container.innerHTML;
     container.innerHTML= content; 
     
    //this line is to watch the result in console , you can remove it later	
-    console.log(container.innerHTML); 
+    console.log("Refrash"); 
 }
 
 
@@ -104,8 +106,7 @@ window.addEventListener('resize' , function(){
 } );
 
 
-reload();
-
+reload("Headcontainer");
 
 // hover
 
@@ -117,7 +118,7 @@ for(let i = 0 ; i<title.length ;i++ ){
 
         let TargetTitle = document.querySelector("#StoreTitleBar :nth-child("+(i+1).toString()+")");
         TargetTitle.style.opacity = 1;
-    })
+    });
 
 }
 for(let i = 0 ; i<title.length ;i++ ){
@@ -126,6 +127,6 @@ for(let i = 0 ; i<title.length ;i++ ){
 
         let TargetTitle = document.querySelector("#StoreTitleBar :nth-child("+(i+1).toString()+")");
         TargetTitle.style.opacity = 0;
-    })
+    });
 
 }

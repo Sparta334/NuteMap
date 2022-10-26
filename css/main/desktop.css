@@ -16,19 +16,93 @@ html{
 }
 
 
+@keyframes LogoAmination {
+    
+    0%{
+
+        opacity: 0;
+        transform: rotate(-359deg);
+
+    }
+    30%{
+        transform: rotate(0deg);
+    }
+    53%{
+       opacity:1;
+       transform: translate(0, 0);
+    }
+    62.5%{
+
+        transform: translate(-32vw, -39vh);
+        
+    }
+    100%{
+        transform: translate(-32vw, -39vh);
+       
+
+    }
+    
+}
+
+@keyframes BackGroundLoad {
+
+    62.5%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.LogoBlock{
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+
+.Logo{
+
+    
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-name: LogoAmination;
+    animation-fill-mode: forwards;
+    margin: auto;
+    top: 35%;
+    left: 39%;
+    position: absolute;
+    z-index: 3;
+
+    
+
+}
 
 #container{
 
+    opacity: 0;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-name: BackGroundLoad;
+    animation-fill-mode: forwards;
     height: calc(100vh);
-    
     background-position: right;
     background-size: 100vh;
     background-repeat: no-repeat;
 
-    background-image:url("../../img/main/main_page.png");
+    background-image:url("../../img/main/Map2.png");
+
+   
     flex-grow: 1;
 
 }
+
+
 
 #arrowcontainer{
     display: flex;

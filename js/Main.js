@@ -85,21 +85,21 @@ function ButtonUrl(){
         e.preventDefault();
         $("#Home").addClass("headerLinkItemUrlAnimate");
         setTimeout(function(){$("#Home").removeClass("headerLinkItemUrlAnimate");} , 890);
-        DelayUrl("./index.html" , 900 );
+        DelayUrl("./index.html" , 600 );
     });
 
     $("#IG").click(function (e) { 
         e.preventDefault();
         $("#IG").addClass("headerLinkItemUrlAnimate");
         setTimeout(function(){$("#IG").removeClass("headerLinkItemUrlAnimate");} , 890);
-        DelayUrl("https://www.instagram.com/ntuedtd_ig/" , 900 );
+        DelayUrl("https://www.instagram.com/ntuedtd_ig/" , 600 );
     });
 
     $("#About_us").click(function (e) { 
         e.preventDefault();
         $("#About_us").addClass("headerLinkItemUrlAnimate");
         setTimeout(function(){$("#About_us").removeClass("headerLinkItemUrlAnimate");} , 890);
-        DelayUrl("./index.html" , 900 );
+        DelayUrl("./index.html" , 600 );
     });
 
 

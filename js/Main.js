@@ -34,7 +34,8 @@ $(document).ready(function(){
 function LogoAnimate() 
 {  
 
-    setTimeout(function(){ $("#LogoAn").addClass("Logo")}, 10);
+    $("#LogoAn").addClass("Logo");
+    $("#LogoAn").removeClass("LogoStart");
     setTimeout(function(){$("#LogoAn").addClass("LogoTada")} , 3000 );
     setTimeout(function(){$("#LogoAn").removeClass("Logo") } , 3000 );
 

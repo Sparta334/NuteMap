@@ -79,6 +79,16 @@ html{
 
 
 
+.LogoStart{
+
+    opacity: 0;
+    height: 32.59%;
+    width: 19.8%;
+    top: 35%;
+    left: 40%;
+
+}
+
 .Logo{
 
     animation-duration: 4s;
@@ -354,3 +364,15 @@ html{
 
 }
 
+.footer{
+
+    position: absolute;
+    z-index: 3;
+    font-size: 3vh;
+    text-align: center;
+    color: white;
+    top: 96%;
+    left:1%;
+
+
+}

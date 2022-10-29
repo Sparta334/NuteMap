@@ -1,19 +1,5 @@
 
-let StoreContainer = document.querySelector('.StoreContainer');
-StoreContainer.addEventListener("wheel" , function(event){
-
-
-    event.preventDefault;
-
-    for(let i = 0 ; i<1 ; i+=0.1 )
-        StoreContainer.scrollLeft += event.deltaY*i*6;
-  
-
-});
-
-
 //禁用滑鼠右鍵
-
 function forbidRightMouse(evt)
 {
     if (evt)
@@ -26,107 +12,58 @@ function forbidRightMouse(evt)
 document.oncontextmenu = forbidRightMouse; //防止遊覽者使用滑鼠右鍵
 
 
+$(window).resize(function(){
 
-function reload(NameID){
-    let container = document.getElementById(NameID);
-    let content = container.innerHTML;
-    container.innerHTML= content; 
-    
-   //this line is to watch the result in console , you can remove it later	
-    console.log("Refrash"); 
-}
-
-
-window.addEventListener('load' ,function(){
-
-
-    if(document.documentElement.clientHeight*1.2 >= document.documentElement.clientWidth ){
-
-        let HeaderIMG = document.getElementsByClassName('HeaderImg');
-        for(let i = 0 ; i< HeaderIMG.length ; i++){
-            HeaderIMG[i].style.height = "7vw";
-        }
-        document.querySelector('.Header').style.height ="8vw";
-        
-        document.querySelector('.Home').style.height ="3vw";
-        document.querySelector('.Author').style.height ="3vw";
-    }
-    else{
-
-        
-        let HeaderIMG = document.getElementsByClassName('HeaderImg');
-        for(let i = 0 ; i< HeaderIMG.length ; i++){
-            HeaderIMG[i].style.height = "calc(10vh)";
-        }
-        document.querySelector('.Header').style.height = "13%";
-        
-        document.querySelector('.Home').style.height ="calc(5vh)";
-        document.querySelector('.Author').style.height ="calc(5vh)";
-    }
-
-    
-
+    console.log($(window).width());
+    $("#container").css("background-size" , $(window).width().toString()+"px "+ $(window).height().toString() +"px"  );
 
 });
 
-
-
-window.addEventListener('resize' , function(){
-
-
     
-    if(document.documentElement.clientHeight*1.2 >= document.documentElement.clientWidth ){
+$(document).ready(function(){
 
-        let HeaderIMG = document.getElementsByClassName('HeaderImg');
-        for(let i = 0 ; i< HeaderIMG.length ; i++){
-            HeaderIMG[i].style.height = "7vw";
-        }
-        document.querySelector('.Header').style.height ="8vw";
-        
-        document.querySelector('.Home').style.height ="3vw";
-        document.querySelector('.Author').style.height ="3vw";
-    }
-    else{
+    // 開頭動畫
 
-        
-        let HeaderIMG = document.getElementsByClassName('HeaderImg');
-        for(let i = 0 ; i< HeaderIMG.length ; i++){
-            HeaderIMG[i].style.height = "calc(10vh)";
-        }
-        document.querySelector('.Header').style.height = "13%";
-        
-        document.querySelector('.Home').style.height ="calc(5vh)";
-        document.querySelector('.Author').style.height ="calc(5vh)";
-    }
-
-    
-    
-  
-
-} );
+    $("#container").css("background-size" , $(window).width().toString()+"px "+ $(window).height().toString() +"px"  );
+    ButtonUrl();
+});
+ 
 
 
-reload("Headcontainer");
+function DelayUrl(url , time){
 
-// hover
 
-let title = document.getElementsByClassName("StoreBlocksImg");
+    setTimeout(function(){
 
-for(let i = 0 ; i<title.length ;i++ ){
+        location.href = url;
 
-    title[i].addEventListener('mouseover' ,function(){
 
-        let TargetTitle = document.querySelector("#StoreTitleBar :nth-child("+(i+1).toString()+")");
-        TargetTitle.style.opacity = 1;
-    });
+    } , time  );
 
 }
-for(let i = 0 ; i<title.length ;i++ ){
 
-    title[i].addEventListener('mouseout' ,function(){
 
-        let TargetTitle = document.querySelector("#StoreTitleBar :nth-child("+(i+1).toString()+")");
-        TargetTitle.style.opacity = 0;
+
+
+function ButtonUrl(){
+
+    $("#Home").click(function (e) { 
+        e.preventDefault();
+        $("#Home").addClass("headerLinkItemUrlAnimate");
+        DelayUrl("./index.html" , 1200 );
     });
+
+    $("#IG").click(function (e) { 
+        e.preventDefault();
+        $("#IG").addClass("headerLinkItemUrlAnimate");
+        DelayUrl("https://www.instagram.com/ntuedtd_ig/" , 1200 );
+    });
+
+    $("#About_us").click(function (e) { 
+        e.preventDefault();
+        $("#About_us").addClass("headerLinkItemUrlAnimate");
+        DelayUrl("./index.html" , 1200 );
+    });
+
 
 }

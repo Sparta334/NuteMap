@@ -8,29 +8,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
-
     <!--font-family: 'Noto Sans TC', sans-serif; -->
 
+    
     <link rel="stylesheet" href="./css/main/desktop.css">
     <link rel="stylesheet" href="./css/main/normalize.css">
-   
+    <link rel="stylesheet" href="./css/main/animate.min.css">
+    
+    
+    
+    <script type="text/javascript" src ="./js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript"  src ="./js/Main.js" ></script>  
 
-    <title>今天吃什麼</title>
+    <title>國北吃什麼</title>
 </head>
 <body>
+
     <div class="LogoBlock">
-        <img class ="Logo" src="./img/main/Logo.png" alt="" height="34%" width="20%">
+        <img id = "LogoAn" src="img/globle/LOGO.PNG" alt="" >
     </div>
-    <div id="container">
-        
-        <div id ="arrowcontainer">
-            <div class="arrow"><img class ="img" src="./img/main/left_arrow.png" alt="2"></div>
-            <div class="arrow"><img class ="img" src="./img/main/up_arrow.png" alt="2"></div>
-            <div class="arrow"><img class ="img" src="./img/main/right_arrow.png" alt="2"></div>
+
+    <main id="container">
+            
+            
+        <div class="headerLink">
+            <div class="headerLinkItem" id="Home"><a href="#"><img src="./img/globle/home.PNG" alt="ss"></a></div>
+            <div class="headerLinkItem" id="IG"><a href="#"><img src="./img/globle/IG.PNG" alt=""></a></div>
+            <div class="headerLinkItem" id="About_us"><a href="#"><img src="./img/globle/about us.PNG" alt=""></a></div>
         </div>
-    </div> 
+
+        <article>
+            <img src="./img/mainpage/store1.PNG" alt="" class="foodDisplay" id="food1">
+            <img src="./img/mainpage/store2.PNG" alt="" class="foodDisplay" id="food2">
+            <img src="./img/mainpage/store5.PNG" alt="" class="foodDisplay" id="food3">
+            <img src="./img/mainpage/store4.PNG" alt="" class="foodDisplay" id="food4">
+            <img src="./img/mainpage/store3.PNG" alt="" class="foodDisplay" id="food5">
+        </article>
+
+        <aside class="arrowContainer">
+            <a href="./right-area.html"><img src="./img/mainpage/left-arrow.PNG" alt="" class="arrow" id ="left-arrow"></a>
+            <a href="./front-area.html"><img src="./img/mainpage/down-arrow.PNG" alt="" class="arrow" id ="down-arrow"></a>
+            <a href="./left-area.html"><img src="./img/mainpage/right-arrow.PNG" alt="" class="arrow" id ="right-arrow"></a>
+        </aside>
+
+    </main>
     
-    <script src ="./js/Main.js" ></script>  
+    
+   
 </body>
 
 </html>
+

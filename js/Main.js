@@ -84,18 +84,21 @@ function ButtonUrl(){
     $("#Home").click(function (e) { 
         e.preventDefault();
         $("#Home").addClass("headerLinkItemUrlAnimate");
+        setTimeout(function(){$("#Home").removeClass("headerLinkItemUrlAnimate");} , 1190);
         DelayUrl("./index.html" , 1200 );
     });
 
     $("#IG").click(function (e) { 
         e.preventDefault();
         $("#IG").addClass("headerLinkItemUrlAnimate");
+        setTimeout(function(){$("#IG").removeClass("headerLinkItemUrlAnimate");} , 1190);
         DelayUrl("https://www.instagram.com/ntuedtd_ig/" , 1200 );
     });
 
     $("#About_us").click(function (e) { 
         e.preventDefault();
         $("#About_us").addClass("headerLinkItemUrlAnimate");
+        setTimeout(function(){$("#About_us").removeClass("headerLinkItemUrlAnimate");} , 1190);
         DelayUrl("./index.html" , 1200 );
     });
 

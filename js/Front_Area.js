@@ -15,7 +15,7 @@ document.oncontextmenu = forbidRightMouse; //防止遊覽者使用滑鼠右鍵
 
 
 $(window).resize(function(){
-    $("#container").css("background-size" , $(window).width().toString()+"px "+ $(window).height().toString() +"px"  );
+    $("#container").css("background-size" , $(window).width().toString()+"px  "+ $(window).height().toString() +"px "  );
     $(".StoreListItem").css( "width", $(".FoodImgFrame").width()-  $(".FoodImgFrame").width()/10 );
     $(".StoreListItem").css( "height", $(".FoodImgFrame").height()- $(".FoodImgFrame").height()/3.4);
     $(".StoreList").css("margin-left" , $(window).width()/70 - (40 - $(window).width()/160)  );
@@ -64,7 +64,7 @@ $(document).ready(function(){
 
     // 開頭動畫
 
-    $("#container").css("background-size" , $(window).width().toString()+"px "+ $(window).height().toString() +"px"  );
+    $("#container").css("background-size" , $(window).width().toString()+"px "+ $(window).height().toString() +"px "  );
     ButtonUrl();
     setTimeout(function(){ $(".btn").addClass("BtnAn");} , 1300 );
     setTimeout(function(){ $(".btn").removeClass("BtnAn");} , 3000 );

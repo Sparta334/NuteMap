@@ -211,6 +211,7 @@ html{
  .StoreContentlist{
 
 
+    
     transform: translateY(0);
     transition: transform 0s ease-in-out;
     list-style: none ;

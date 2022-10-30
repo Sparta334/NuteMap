@@ -21,7 +21,7 @@ $(window).resize(function(){
     $(".StoreList").css("margin-left" , $(window).width()/70 - (40 - $(window).width()/160)  );
     $(".StoreList").css("margin-top" , $(window).height()/10);
 
-    $(".StoreContentlistItem").css("height" ,  $(".StoreContent").width());
+    $(".StoreContentlistItem").css("height" ,  $(".StoreContent").height());
 
 
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
    $(".StoreList").css("margin-left" , $(window).width()/70 - (40- $(window).width()/160)  );
    $(".StoreList").css("margin-top" , $(window).height()/10);
    
-   $(".StoreContentlistItem").css("height" ,  $(".StoreContent").width());
+   $(".StoreContentlistItem").css("height" ,  $(".StoreContent").height());
 
 
 

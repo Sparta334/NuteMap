@@ -136,7 +136,6 @@ html{
 
     animation-name: zoomOutUp;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
     
 
 
@@ -174,7 +173,7 @@ html{
     background-repeat: no-repeat;
     z-index: 0;
     position: absolute;
-    background-image:url("../../img/mainpage/main-background.PNG");
+    background-image:url("../../img/mainpage/main-background.png");
 
    
 

@@ -96,7 +96,7 @@ html{
     background-repeat: no-repeat;
     z-index: 0;
     position: absolute;
-    background-image:url("../../img/otherarea/background.png");   
+    background-image:url("../../img/otherarea/background.webp");   
 
 }
 
@@ -116,7 +116,7 @@ html{
     width: 42%;
     margin-left:27% ;
     margin-top:-4% ;
-    background-image: url("../../img/otherarea/photoplayer.png");
+    background-image: url("../../img/otherarea/photoplayer.webp");
     background-repeat: no-repeat;
     background-size: calc(45.6vw) calc(90vh);
     background-position: center ;

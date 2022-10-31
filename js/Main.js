@@ -102,7 +102,20 @@ function ButtonUrl(){
         DelayUrl("./index.html" , 600 );
     });
 
+    $("#left-arrow").click(function (e) { 
+        e.preventDefault();
+        DelayUrl("./right-area.html" , 2 );
+    });
 
+    $("#down-arrow").click(function (e) { 
+        e.preventDefault();
+        DelayUrl("./front-area.html" , 2 );
+    });
+
+    $("#right-arrow").click(function (e) { 
+        e.preventDefault();
+        DelayUrl("./left-area.html" , 2 );
+    });
 }
 
 function FoodMarkClickAnimate(){

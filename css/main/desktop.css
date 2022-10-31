@@ -376,3 +376,17 @@ html{
 
 
 }
+
+
+
+.arrowContainer a{
+
+    cursor:auto;
+
+}
+
+.arrowContainer a img{
+
+    cursor:pointer;
+
+}

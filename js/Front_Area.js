@@ -33,7 +33,7 @@ $(window).resize(function(){
         $(".StoreDetailTitle").css("font-size" , ($(window).height() /100)*5  );
         $(".StoreTitle").css("font-size" , ($(window).height() /100)*7  );
         $(".StoreDetailImg").css("height" , ($(window).height() /100)*10  );
-        $(".StoreDetailContext").css("font-size" , ($(window).height() /100)*2.5  );
+        $(".StoreDetailContext").css("font-size" , ($(window).height() /100)*3.5  );
     }
     else if (Varte >= 1) {
         $(".StoreTitle").css("font-size" , ($(window).width() /100)*3  );
@@ -45,7 +45,7 @@ $(window).resize(function(){
         $(".StoreTitle").css("font-size" , ($(window).width() /100)*3  );
         $(".StoreDetailImg").css("height" , ($(window).width() /100)*7  );
         $(".StoreDetailTitle").css("font-size" , ($(window).width() /100)*3 );
-        $(".StoreDetailContext").css("font-size" , ($(window).width() /100)*1  );
+        $(".StoreDetailContext").css("font-size" , ($(window).width() /100)*2.5  );
     }
 
 
@@ -89,7 +89,7 @@ $(document).ready(function(){
         $(".StoreDetailTitle").css("font-size" , ($(window).height() /100)*5  );
         $(".StoreTitle").css("font-size" , ($(window).height() /100)*7  );
         $(".StoreDetailImg").css("height" , ($(window).height() /100)*10  );
-        $(".StoreDetailContext").css("font-size" , ($(window).height() /100)*2.5  );
+        $(".StoreDetailContext").css("font-size" , ($(window).height() /100)*3.5  );
     }
     else if (Varte >= 1) {
         $(".StoreTitle").css("font-size" , ($(window).width() /100)*3  );
@@ -101,7 +101,7 @@ $(document).ready(function(){
         $(".StoreTitle").css("font-size" , ($(window).width() /100)*3  );
         $(".StoreDetailImg").css("height" , ($(window).width() /100)*7  );
         $(".StoreDetailTitle").css("font-size" , ($(window).width() /100)*3 );
-        $(".StoreDetailContext").css("font-size" , ($(window).width() /100)*1  );
+        $(".StoreDetailContext").css("font-size" , ($(window).width() /100)*2.5  );
     }
 
 
@@ -188,7 +188,7 @@ function ButtonUrl(){
         }
     
         $(".StoreList").css("transform" , "translateX(" + -((idx)* ( $(".StoreListItemimg").width() + 400 )  ).toString() + "px )"   );
-        $(".StoreContentlist").css("transform" , "translateY(" + -((idx)* ( $(".StoreContentlistItem").height() )  ).toString() + "px )"  )
+        $(".StoreContentlist").css("transform" , "translateY(" + -((idx)* ( $(".StoreContentlistItem").height() +500 )  ).toString() + "px )"  )
         console.log(idx);
     }
     

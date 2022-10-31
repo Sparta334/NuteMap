@@ -216,6 +216,7 @@ html{
     flex-shrink: 0;
     list-style: none;
     display: flex;
+    gap : 500px 0px;
     flex-direction: column;
 
  }
@@ -258,7 +259,6 @@ html{
 
     color:#FF6200 ;
     font-size: 30px;
-    text-align: center;
     margin-left: 26%;
     margin-top: -1%;
 

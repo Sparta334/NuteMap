@@ -92,14 +92,19 @@ function ButtonUrl(){
         e.preventDefault();
         $("#IG").addClass("headerLinkItemUrlAnimate");
         setTimeout(function(){$("#IG").removeClass("headerLinkItemUrlAnimate");} , 890);
-        DelayUrl("https://www.instagram.com/ntuedtd_ig/" , 600 );
+                setTimeout(function(){
+
+            window.open("https://www.instagram.com/ntuedtd_ig/" , "_blank" );
+    
+    
+        }  ,600 );
     });
 
     $("#About_us").click(function (e) { 
         e.preventDefault();
         $("#About_us").addClass("headerLinkItemUrlAnimate");
         setTimeout(function(){$("#About_us").removeClass("headerLinkItemUrlAnimate");} , 890);
-        DelayUrl("./index.html" , 600 );
+        DelayUrl("./about_us.html" , 600 );
     });
 
     $("#left-arrow").click(function (e) { 

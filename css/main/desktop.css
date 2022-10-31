@@ -6,7 +6,9 @@ html{
     height: 100vh;
     width: 100vw;
     
+    
 }
+
 
 
 *,*:after,*:before{
@@ -185,6 +187,7 @@ html{
     opacity: 0;
     position: absolute;
     z-index: 2;
+    cursor: pointer;
 }
 
 .An_food1{
@@ -364,18 +367,6 @@ html{
 
 }
 
-.footer{
-
-    position: absolute;
-    z-index: 3;
-    font-size: 3vh;
-    text-align: center;
-    color: white;
-    top: 96%;
-    left:1%;
-
-
-}
 
 
 

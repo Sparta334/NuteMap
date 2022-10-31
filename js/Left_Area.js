@@ -154,23 +154,31 @@ function ButtonUrl(){
     $("#Home").click(function (e) { 
         e.preventDefault();
         $("#Home").addClass("headerLinkItemUrlAnimate");
+        setTimeout(function(){$("#Home").removeClass("headerLinkItemUrlAnimate");} , 1200);
         DelayUrl("./index.html" , 1200 );
     });
 
     $("#IG").click(function (e) { 
         e.preventDefault();
         $("#IG").addClass("headerLinkItemUrlAnimate");
-        DelayUrl("https://www.instagram.com/ntuedtd_ig/" , 1200 );
+        setTimeout(function(){$("#IG").removeClass("headerLinkItemUrlAnimate");} , 1200);
+        setTimeout(function(){
+            window.open("https://www.instagram.com/ntuedtd_ig/" , "_blank" );
+        
+        
+            }  ,1200 );
     });
 
     $("#About_us").click(function (e) { 
         e.preventDefault();
         $("#About_us").addClass("headerLinkItemUrlAnimate");
-        DelayUrl("./index.html" , 1200 );
+        setTimeout(function(){$("#About_us").removeClass("headerLinkItemUrlAnimate");} , 1200);
+        DelayUrl("./about_us.html" , 1200 );
     });
 
 
 }
+
 
 
 

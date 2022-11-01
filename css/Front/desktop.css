@@ -6,6 +6,7 @@ html{
 }
 
 
+
 *,*:after,*:before{
     box-sizing: inherit;
 }
@@ -24,13 +25,14 @@ html{
     100%{
         opacity: 1;
     }
-
+    
 }
 
 .LogoBlock{
     height: 100%;
     width: 100%;
     position: absolute;
+    
 }
 
 #Logo{
@@ -225,14 +227,16 @@ html{
  
 
 
+      
 .StoreTitle{
 
     text-align: center;
     color:#FF6200;
     font-weight: 800;
-
+    margin: 0 0;
 
 }
+
 
 .StoreDetail{
 

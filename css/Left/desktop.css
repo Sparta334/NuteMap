@@ -5,6 +5,11 @@ html{
     cursor:url("../../img/globle/YUGIOH.ani");
 }
 
+h1{
+
+    margin-bottom: 0px;
+}
+
 
 *,*:after,*:before{
     box-sizing: inherit;
@@ -226,14 +231,16 @@ html{
  
 
 
+      
 .StoreTitle{
 
     text-align: center;
     color:#FF6200;
     font-weight: 800;
-
+    margin: 0 0;
 
 }
+
 
 .StoreDetail{
 

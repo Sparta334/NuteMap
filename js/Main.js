@@ -44,10 +44,10 @@ function LogoAnimate()
 function FoodMarkAnimate(){
 
     setTimeout(function(){$("#food1").addClass("An_foodPopOut1") }, 3500 );
-    setTimeout(function(){$("#food2").addClass("An_foodPopOut2") }, 3750 );
-    setTimeout(function(){$("#food3").addClass("An_foodPopOut3") }, 4000 );
-    setTimeout(function(){$("#food4").addClass("An_foodPopOut4") }, 4250 );
-    setTimeout(function(){$("#food5").addClass("An_foodPopOut5") }, 4500 );
+    setTimeout(function(){$("#food2").addClass("An_foodPopOut2") }, 4000 );
+    setTimeout(function(){$("#food3").addClass("An_foodPopOut3") }, 4500 );
+    setTimeout(function(){$("#food4").addClass("An_foodPopOut4") }, 5000 );
+    setTimeout(function(){$("#food5").addClass("An_foodPopOut5") }, 5500);
  
     setTimeout(function () { 
     $(".foodDisplay").css("opacity" , "1");

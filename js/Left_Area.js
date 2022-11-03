@@ -64,16 +64,16 @@ $(document).ready(function(){
 
     // 開頭動畫
 
-    $("#container").css("background-size" , $(window).width().toString()+"px  "+ $(window).height().toString() +"px "  );
+    $("#container").ready( function(){ $("#container").css("background-size" , $(window).width().toString()+"px  "+ $(window).height().toString() +"px "  )});
     ButtonUrl();
-    setTimeout(function(){ $(".btn").addClass("BtnAn");} , 1300 );
-    setTimeout(function(){ $(".btn").removeClass("BtnAn");} , 3000 );
+    $(".btn").ready( function() {setTimeout(function(){ $(".btn").addClass("BtnAn");} , 1300 );});
+    $(".btn").ready( function() {setTimeout(function(){ $(".btn").removeClass("BtnAn");} , 3000 );});
 
 
     //大小調整
 
-   $(".StoreListItem").css( "width", $(".FoodImgFrame").width()-  $(".FoodImgFrame").width()/10 );
-   $(".StoreListItem").css( "height", $(".FoodImgFrame").height()- $(".FoodImgFrame").height()/3.4);
+    $(".StoreListItem").ready( function(){ $(".StoreListItem").css( "width", $(".FoodImgFrame").width()-  $(".FoodImgFrame").width()/10 )});
+    $(".StoreListItem").ready( function(){ $(".StoreListItem").css( "height", $(".FoodImgFrame").height()- $(".FoodImgFrame").height()/3.4)});
    $(".StoreList").css("margin-left" , $(window).width()/70 - (40- $(window).width()/160)  );
    $(".StoreList").css("margin-top" , $(window).height()/10);
    

@@ -16,9 +16,9 @@ $(document).ready(function(){
 
     $("#container").css("background-size" , $(window).width().toString()+"px "+ $(window).height().toString() +"px"  );
 
-    LogoAnimate();
-    FoodMarkAnimate();
-    setTimeout(arrowAnimate , 4500);
+    $("#LogoAn").ready(function () {LogoAnimate();  } );
+    $(".foodDisplay").ready( function () {FoodMarkAnimate();  } )  ;
+    $(".headerLinkItem").ready(function () { setTimeout(arrowAnimate , 4500); }) ;
     ButtonUrl();
   
   
